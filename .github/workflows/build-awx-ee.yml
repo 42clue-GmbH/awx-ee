@@ -12,7 +12,7 @@ jobs:
       contents: read
       actions: read
       packages: write
-    name: Build and push border0/awx-ee image
+    name: Build and push 42clue-GmbH/awx-ee image
     steps:
       - uses: actions/checkout@v2
 
@@ -50,7 +50,7 @@ jobs:
             -t ghcr.io/${{ github.repository_owner }}/awx-ee:${RELEASE} \
             -t ghcr.io/${{ github.repository_owner }}/awx-ee:${BRANCH} \
             --label "org.opencontainers.image.source=https://github.com/${{ github.repository }}" \
-            --label "org.opencontainers.image.description=Border0 AWX Execution Environment" \
+            --label "org.opencontainers.image.description=42clue-GmbH AWX Execution Environment" \
             --push context
           docker buildx ls
 

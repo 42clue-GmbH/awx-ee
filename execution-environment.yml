@@ -59,6 +59,7 @@ dependencies:
     pyyaml
     six
     receptorctl
+    netutils
 
 # include border0 ssh config file
 additional_build_files:

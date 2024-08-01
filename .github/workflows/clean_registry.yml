@@ -14,7 +14,7 @@ jobs:
     name: Delete old GHCR.io container images
     runs-on: ubuntu-latest
     steps:
-      - name: Clear out old GHCR.io borderzero/border0 registry images
+      - name: Clear out old GHCR.io 42clue-GmbH/awx-ee registry images
         uses: snok/container-retention-policy@v2
         with:
           image-names: awx-ee
